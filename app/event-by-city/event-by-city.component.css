@@ -1,0 +1,35 @@
+.body{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 1166px;
+    height: 320px;
+}
+.city{
+    display: flex;
+    flex-direction: row;
+    width: 1166px;
+    overflow-x: scroll;
+    gap: 20px;
+
+}
+.col{
+    display: flex;
+
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 183px;
+    width: 240px;
+}
+.city::-webkit-scrollbar {
+    display: none; 
+  }
+
+h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

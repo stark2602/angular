@@ -1,0 +1,50 @@
+.footer{
+  padding-top:40px;
+  width: 1372px;
+height: 513px;
+background-color: rgb(14, 14, 14);
+color:white;
+
+}
+.logo{
+  
+  margin-left:100px;
+}
+.body{
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.line{
+  margin-left:100px;
+display: flex;
+flex-direction: row;
+margin-bottom: 10px;
+}
+.line img{
+  height:24px;
+  color: white;
+  width:24px;
+  margin-right: 16px;
+}
+.col2 h3{
+  margin-top: 0px;
+  color: #E00046;
+}
+.col2{
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.col2 span{
+  color:white;
+}
+.footer-image{
+  margin-left:64px;
+}
+.copyright{
+  margin-top: 32px;
+  margin-left: 500px;
+  color:#6b6a6a;
+}

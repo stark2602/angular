@@ -1,0 +1,109 @@
+<div class="event-page">
+<div class="head">
+    <span routerLink="/home">Home / </span>
+    <span routerLink="/home">Events</span>
+    <span routerLink="/home"> Find your Pride</span>
+</div>
+
+<div class="body">
+<div class="left">
+    <img src="assets/Mask Group 141190-4@2x.png" alt="">
+    <div class="line">
+        <img src="assets/Mask Group 141196.png" alt="">
+        <img src="assets/Mask Group 141200.png" alt="">
+        <img src="assets/Mask Group 141202.png" alt="">
+      <div class="box">See All ></div>
+    </div>
+    <div class="box2">
+       <h1>About Event</h1>
+       <p>
+        There’s something magical about San Francisco, whether you’re cruising by the Golden Gate Bridge on a boat tour or dancing at a party in the Mission. Discover fantastic things to do in the Bay Area today by exploring this calendar of concerts, comedy shows, pop-up markets, and more — all selected by expert event curators.
+       </p>
+    </div>
+    <div class="box3">
+        <div class="col">
+            <img src="" alt="">
+            <h1>Refund Policy</h1>
+            <p>There’s something magical about San Francisco, whether you’re cruising by the Golden Gate Bridge on a boat tour or dancing at.</p>
+              
+        </div>
+    </div>
+    <div class="box4">
+        <div class="col-faq">
+            <h1> FAQ</h1>
+            <div class="faq-section">
+                <div *ngFor="let faq of faqs" class="faq-item">
+                  <h3 (click)="toggleFaq(faq)" class="faq-question">
+                    {{ faq.question }}
+                    <span class="faq-icon">{{ faq.isOpen ? '-' : '+' }}</span>
+                  </h3>
+              
+                  <div *ngIf="faq.isOpen" class="faq-answer">
+                    <p>{{ faq.answer }}</p>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+    <br>
+<br>
+    <div class="box5">
+       
+            <h1> Terms & Conditons</h1>
+           <p>
+           Each wristband/pass admits one person, and one person only. Once purchased, wristbands/passes cannot be transferred, exchanged, refunded, or returned. ‍Purchaser/attendee must carry receipt of wristband/pass purchased online/through any third-party retailer in order to register at the Comic Con India Event (hereinafter “Event”) and collect wristband/pass for entry to the venue for the Event. ‍It is recommended that purchasers/attendees arrive at the venue for the Event a minimum of 20 minutes prior in order to register and pick up their physical wristbands/passes. ‍No wristband/pass shall be sold in cash, online, or in any other form, to any minor. ‍Any person wishing to purchase a wristband/pass must be above 18 years of age. ‍All minor attendees must be accompanied by adults. ‍Comic Con India reserves the right to deny entry or handing over of wristbands/passes in case the holder/furnisher of any e-ticket is a minor and is not accompanied by an adult at the Box Office and show entry. ‍Entry to the Event shall only be permitted to valid wristband/pass holders. In cases of purchase of a ‘Super Fan’ pass, only ONE Super Fan wristband/pass will be issued at the Event, which shall be valid for all days of the Event. ‍Wristbands/passes that have been removed or tampered with shall be rendered invalid and shall not be replaced. ‍Children aged 3 years or below shall not be required to purchase a wristband/pass for entry. ‍Anyone above 3 years of age shall be required to pay full admission price for entry to the Event. ‍Organizers are not responsible for damage to, or loss of, wristband/pass once issued. ‍Duplicate wristband/pass will not be issued for lost, stolen, or damaged wristbands/passes. ‍Purchasers should beware of counterfeit wristbands/passes. ‍Organizers are not responsible for any counterfeit wristbands/passes purchased by any purchaser/attendee. ‍Organizers reserve the rights of admission, even to valid wristband/pass holders. ‍Internet handling fee per wristband/pass may be levied upon transactions. ‍It is recommended that purchasers check the total amount before making any payment. ‍Wristbands/passes once booked/purchased cannot be exchanged or refunded. Valid wristbands/passes must be displayed at all times during/at the Event. ‍The Organizers reserve the right to examine wristbands/passes at anytime during/at the Event in order to authenticate their validity/genuineness. All wristband/passes are the property of the Organizers and must be relinquished to the Organizers on demand. ‍‍To the fullest extent permitted by law the Organizers will not be responsible for loss, damage or injury to any person or their property howsoever caused.
+           </p>
+              
+    </div>
+    <div class="box6">
+        <h1>
+            View glimpse of past events
+            
+        </h1>
+        <img src=" assets/Screenshot (484).png" alt="">
+    </div>
+    <h1>
+        Review
+    </h1>
+   <img src="assets/Screenshot (485).png" alt="" style="width: 665px;">
+   <img src="assets/Screenshot (486).png" alt="" style="width: 665px;">
+  
+   <img src="" alt="">
+</div>
+
+<div class="right">
+    <div class="cart">
+        <h2>Find your Pride in San Francisco year-round fest</h2>
+        <div class="line">
+            <img src="assets/Calendar.svg" alt="" style="width: 24px;height: 24px;">
+            <span>
+                 Oct 1, 2024 | Saturday, 7pm-10pm
+            </span>
+        </div>
+        <div class="line">
+            <img src="assets/Location.svg" alt="" style="width: 24px; height:24px"> 
+            <span>Colloseum Oakland, Califonia</span>
+        </div>
+        <div *ngFor="let item of items; let i = index" class="cart-item">
+          <span>{{ item.name }}</span>
+          <div class="quantity-controls">
+            <button (click)="decreaseQuantity(i)">-</button>
+            <span>{{ item.quantity }}</span>
+            <button (click)="increaseQuantity(i)">+</button>
+          </div>
+          <span>Price: ${{ item.price * item.quantity }}</span>
+        </div>
+      
+        <div class="total">
+          <h3>Total: ${{ totalPrice }}</h3>
+        </div>
+      </div>
+      
+</div>
+</div>
+</div>
+<app-most-popular>[title]="'Also viewed'"</app-most-popular>
+<app-footer></app-footer>
+
+

@@ -1,0 +1,26 @@
+
+.body{
+  margin-top:20px;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  width: 98vw;
+height: 350px ;
+}
+
+.body::-webkit-scrollbar {
+  display: none; 
+}
+
+.event{
+
+/* UI Properties */
+height: 350px;
+margin-right: 10px;
+margin-left: 10px;
+background: transparent  0% 0% no-repeat padding-box;
+border-radius: 16px;
+opacity: 1;
+}
+  
+ 

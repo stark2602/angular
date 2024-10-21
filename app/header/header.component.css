@@ -1,0 +1,100 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    align-items: center;
+    box-shadow: #002DAA14 0px 4px 8px ;
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  .logo[_ngcontent-ng-c2076777360] img[_ngcontent-ng-c2076777360] {
+    width: 47px;
+  }
+  /* .logo {
+   
+    top: 22px;         
+    left: 48px;       
+    width: 170px;     
+    height: 20px;      
+          
+  } */
+  
+  .nav{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+  }
+.search_box{
+top: 12px;
+left: 314px;
+width: 790px;
+height: 52px;
+
+/* UI Properties */
+
+background: #FFF9F9 0% 0% no-repeat padding-box;
+border: 1px solid #00000014;
+border-radius: 8px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.box1{
+  margin-top: 5px;
+  width: 218px;
+  padding-left: 20px;
+  border-right: #00000014 solid 1px;
+  height: 40px;
+}
+.box2{
+  margin-top:5px;
+  width: 240px;
+  padding-left: 20px;
+}
+.bar{
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-21) var(--unnamed-font-family-proxima-nova);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal medium 16px/21px Proxima Nova;
+letter-spacing: 0px;
+color: #000000CC;
+opacity: 0.24;
+border:none;
+}
+.search-button{
+  background: #E00046;
+  width: 40px;
+  height: 40px;
+  background: var(--unnamed-color-e00046) 0% 0% no-repeat padding-box;
+  background: #E00046 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  top: 10px;
+  margin-top: 5px;
+  border:none;
+  margin-right:5px;
+}
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 100px;
+  }
+  .icon-header{
+    width: 100px;
+  height: 25px;
+  }
+  /* ul li  {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  } */
+  

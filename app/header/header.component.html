@@ -1,0 +1,33 @@
+<header>
+    <div class="nav">
+      <div class="logo">
+        <img src="assets/images.jpeg" alt="Logo" routerLink="/home"/>
+      </div>
+      <div class="search_box">
+       <div class="box1">
+        <div class="search-head">LOCATION</div>
+        <input type="text" placeholder="Locations" [(ngModel)]="location" class="bar"/>
+       </div>
+
+       <div class="box1">
+        <div class="search-head">DATE</div>
+        <input type="date" [(ngModel)]="date" class="bar"/>
+       </div>
+
+        <div class="box2">
+          <div class="search-head">EVENT</div>
+          <input type="text" placeholder="Select event type" [(ngModel)]=" eventType" class="bar"/>
+         </div>
+
+        <button (click)="onSearch()" class="search-button">
+          <img src="assets/Search white.svg" alt="Search" /> 
+        </button>
+      </div>
+ 
+      <ul>
+        <li><img src="assets/Cart icon.svg" alt="Search" class="icon-header"/> </li>
+        <li><img src="assets/W O Img.svg" alt="Search" class="icon-header"/> </li>
+      </ul>
+    </div>
+  </header>
+  
